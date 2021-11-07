@@ -1,4 +1,6 @@
-Unique link to open lecture directly:
+With the help of deep GitHub integration, you can link the Feature to a branch in GitHub and Zepel will automatically update progress within your team.
+
+Say you're working on Public API for your product. You'll create a feature called Public API in Zepel, create tasks for it, and link the feature to your new Branch using the command suggested by Zepel:link feature to github branchUnique link to open lecture directly:
 
 Have a copy of below link for Quick view of this video at later time
 https://www.udemy.com/selenium-real-time-examplesinterview-questions/learn/v4/t/lecture/6285028?start=0
