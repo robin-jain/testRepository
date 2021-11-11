@@ -1,4 +1,6 @@
 package ObjectRepository;
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -19,7 +21,7 @@ public class Login_Objects {
 	By btn=By.xpath("//*[@id=\"L2AGLb\"]/div");
 	
 	
-	public void fn_TestgetUR(String str) {
+	public void fn_TestgetUR(String str) throws IOException {
 		bs.fn_click(btn, "thisa");
 		driver.findElement(type).sendKeys(str);	
 		bs.fn_click(gbutton, "this is ");

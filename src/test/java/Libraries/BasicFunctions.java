@@ -1,17 +1,20 @@
 package Libraries;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
 
 public class BasicFunctions {
 
 	public WebDriver driver;
 	
-
+	
 	public BasicFunctions(WebDriver driver) {
 		this.driver=driver;
 	}
@@ -28,9 +31,10 @@ public class BasicFunctions {
 		
 		try{
 			driver.get(URL);
-			//SetUp.childTest.pass("Navigated to URL"+ URL);
+			SetUp.func_printlogPass("This is done");
+			
 		} catch(Exception e) {
-			//SetUp.childTest.fail("Not able to  navigate to URL"+ URL);
+			SetUp.func_printlogFail("This is done");
 		}
 		
 	}
@@ -40,15 +44,16 @@ public class BasicFunctions {
 	/**
 	 * Used to Click WebElement
 	 * @param Locator=Application and Element name 
+	 * @throws IOException 
 	 */
-	public void fn_click(By Locator, String elem) {
+	public void fn_click(By Locator, String elem) throws IOException {
 		
 		try{
 			driver.findElement(Locator).click();
 			//SetUp.childTest.pass("Successfully cliced to Element "+ elem);
 		} catch(Exception e) {
 			//SetUp.childTest.fail("Not able to click to Element"+ elem,
-					//MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot()).build());
+//					MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot()).build());
 			//SetUp.childTest.info(e);
 		}
 		

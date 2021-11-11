@@ -3,14 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="TestCase.ChildWindow"/>
-      <class name="TestCase.PropertyExample"/>
-      <class name="TestCase.Test_Screenshot"/>
-      <class name="TestCase.NewTest"/>
-      <class name="TestCase.Test_ActionClassBuild"/>
-      <class name="TestCase.ScorllbyElementVisibleHorizantlly"/>
-      <class name="TestCase.TC_001_VerifyLogin"/>
-      <class name="TestCase.ScollbyElementVisible"/>
+      <class name="TestCases.TC_001"/>
+      <class name="TestCases.TC_002"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

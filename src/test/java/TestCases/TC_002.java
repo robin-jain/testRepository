@@ -8,12 +8,12 @@ import Libraries.BasicFunctions;
 import Libraries.SetUp;
 import ObjectRepository.Login_Objects;
 
-public class TC_001 extends SetUp{
+public class TC_002 extends SetUp{
 
 
 	
 	@Test
-  public void TC_002_loginandVerify() throws IOException {
+  public void TC_001_loginandVerify() throws IOException {
 		System.out.println("This is done");	
 		startBrowser();
 		BasicFunctions bs=new BasicFunctions(driver);

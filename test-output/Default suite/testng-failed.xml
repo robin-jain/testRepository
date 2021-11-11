@@ -5,8 +5,10 @@
     <classes>
       <class name="TestCases.TC_001">
         <methods>
-          <include name="f"/>
           <include name="f1"/>
+          <include name="TC_001_loginandVerify"/>
+          <include name="startReprt"/>
+          <include name="method"/>
         </methods>
       </class> <!-- TestCases.TC_001 -->
     </classes>
