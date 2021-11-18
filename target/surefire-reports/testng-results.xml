@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="27208" started-at="2021-11-11T22:41:17Z" finished-at="2021-11-11T22:41:45Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="27208" started-at="2021-11-11T22:41:17Z" finished-at="2021-11-11T22:41:45Z">
+      <class name="TestCases.TC_001">
+        <test-method status="PASS" signature="startReprt()[pri:0, instance:TestCases.TC_001@6b19b79]" name="startReprt" is-config="true" duration-ms="178" started-at="2021-11-11T22:41:17Z" finished-at="2021-11-11T22:41:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReprt -->
+        <test-method status="PASS" signature="f1()[pri:0, instance:TestCases.TC_001@6b19b79]" name="f1" is-config="true" duration-ms="0" started-at="2021-11-11T22:41:18Z" finished-at="2021-11-11T22:41:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method status="PASS" signature="method(java.lang.reflect.Method)[pri:0, instance:TestCases.TC_001@6b19b79]" name="method" is-config="true" duration-ms="4" started-at="2021-11-11T22:41:18Z" finished-at="2021-11-11T22:41:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestCases.TC_001.TC_002_loginandVerify() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="TC_002_loginandVerify()[pri:0, instance:TestCases.TC_001@6b19b79]" name="TC_002_loginandVerify" duration-ms="15123" started-at="2021-11-11T22:41:18Z" finished-at="2021-11-11T22:41:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_002_loginandVerify -->
+        <test-method status="PASS" signature="fn_Suit()[pri:0, instance:TestCases.TC_001@6b19b79]" name="fn_Suit" is-config="true" duration-ms="494" started-at="2021-11-11T22:41:45Z" finished-at="2021-11-11T22:41:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fn_Suit -->
+      </class> <!-- TestCases.TC_001 -->
+      <class name="TestCases.TC_002">
+        <test-method status="PASS" signature="f1()[pri:0, instance:TestCases.TC_002@2a32de6c]" name="f1" is-config="true" duration-ms="1" started-at="2021-11-11T22:41:33Z" finished-at="2021-11-11T22:41:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method status="PASS" signature="method(java.lang.reflect.Method)[pri:0, instance:TestCases.TC_002@2a32de6c]" name="method" is-config="true" duration-ms="1" started-at="2021-11-11T22:41:33Z" finished-at="2021-11-11T22:41:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestCases.TC_002.TC_001_loginandVerify() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method -->
+        <test-method status="PASS" signature="TC_001_loginandVerify()[pri:0, instance:TestCases.TC_002@2a32de6c]" name="TC_001_loginandVerify" duration-ms="11879" started-at="2021-11-11T22:41:33Z" finished-at="2021-11-11T22:41:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001_loginandVerify -->
+      </class> <!-- TestCases.TC_002 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

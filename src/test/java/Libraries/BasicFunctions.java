@@ -24,17 +24,20 @@ public class BasicFunctions {
 	/**
 	 * Used to Navigate to URL
 	 * @param URL=Application URL
+	 * @throws IOException 
 	 */
 	
 	
-	public void fn_get(String URL) {
+	public void fn_get(String URL) throws IOException {
 		
 		try{
 			driver.get(URL);
-			SetUp.func_printlogPass("This is done");
+			SetUp.func_printlogPass("Navigated to URL"+ URL);
 			
 		} catch(Exception e) {
-			SetUp.func_printlogFail("This is done");
+			SetUp.func_printlogFail("Not able to Navigate to URL"+ URL);
+			SetUp.childTest.fail("Not able to click to Element",
+					MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot()).build());
 		}
 		
 	}
@@ -50,11 +53,11 @@ public class BasicFunctions {
 		
 		try{
 			driver.findElement(Locator).click();
-			//SetUp.childTest.pass("Successfully cliced to Element "+ elem);
+			SetUp.func_printlogPass("Successfully clicked on "+elem );;
 		} catch(Exception e) {
-			//SetUp.childTest.fail("Not able to click to Element"+ elem,
-//					MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot()).build());
-			//SetUp.childTest.info(e);
+			SetUp.func_printlogFail("Not able to Click to Elemenent"+ elem);
+			SetUp.childTest.fail("Not able to click to Element",
+					MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot()).build());
 		}
 		
 	}

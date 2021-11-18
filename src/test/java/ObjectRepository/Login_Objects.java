@@ -17,14 +17,14 @@ public class Login_Objects {
 	
 	By type=By.name("q");
 	By username1=By.xpath("");
-	By gbutton=By.xpath("//input[@value='Google Search']");
+	By gbutton=By.linkText("norsk");
 	By btn=By.xpath("//*[@id=\"L2AGLb\"]/div");
 	
 	
 	public void fn_TestgetUR(String str) throws IOException {
 		bs.fn_click(btn, "thisa");
 		driver.findElement(type).sendKeys(str);	
-		bs.fn_click(gbutton, "this is ");
+		bs.fn_click(gbutton, "Click on Search butt ");
 	}
 
 

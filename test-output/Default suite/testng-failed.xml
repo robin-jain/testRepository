@@ -6,8 +6,9 @@
       <class name="TestCases.TC_001">
         <methods>
           <include name="f1"/>
-          <include name="TC_001_loginandVerify"/>
+          <include name="TC_001_loginandVerify" invocation-numbers="2"/>
           <include name="startReprt"/>
+          <include name="fn_Suit"/>
           <include name="method"/>
         </methods>
       </class> <!-- TestCases.TC_001 -->
