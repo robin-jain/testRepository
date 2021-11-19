@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -70,10 +73,11 @@ public class SetUp {
 	
 	@BeforeTest
 	public void startReprt() {
-		htmlReport=new ExtentHtmlReporter("Reports/Automation_Report.html");
+		String str = new SimpleDateFormat("yyyyMMddHHmm'.txt'").format(new Date());
+		htmlReport=new ExtentHtmlReporter("Reports/Automation_Report_"+str+".html");
 		extent=new ExtentReports();
 		extent.attachReporter(htmlReport);
-		htmlReport.config().setReportName("Regression Reprot");
+		htmlReport.config().setReportName("Regression Report");
 	}
 	
 	@BeforeMethod
