@@ -21,7 +21,7 @@ public class Login_Objects {
 	By btn=By.xpath("//*[@id=\"L2AGLb\"]/div");
 	
 	
-	public void fn_TestgetUR(String str) throws IOException {
+	public void fn_SearchonGooglePage(String str) throws IOException {
 		bs.fn_click(btn, "Click on Next button");
 		bs.fn_sendKeys(type, str);
 		//driver.findElement(type).sendKeys(str);	

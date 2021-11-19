@@ -27,14 +27,19 @@ public class DataIn {
 		  int maxRow=ws.getLastRowNum();
 		  int maxCol=ws.getRow(0).getLastCellNum();
 		  int iter=countTestCasesforIteration(str);
-		  Map<Object, Object> datamap = new HashMap<>();
+		 
 		  obj = new Object[iter][1];
-			  for (int i=0;i<maxRow;i++) {
+			int icnt=0;  
+		  	for (int i=0;i<maxRow;i++) {
+		  		 Map<Object, Object> datamap = new HashMap<>();
 					  if (ws.getRow(i+1).getCell(0).toString().equalsIgnoreCase(m.getName())) {
 						 // System.out.println(ws.getRow(i+1).getCell(0).toString());
 						  for (int j=0;j<maxCol;j++) {
 							  datamap.put(ws.getRow(0).getCell(j).toString(), ws.getRow(i+1).getCell(j).toString()); 
-						  }obj[i][0] = datamap;
+						  }
+						 
+						  obj[icnt][0] = datamap;
+						  icnt=icnt+1;
 						  
 					  }
 					  

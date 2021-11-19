@@ -19,7 +19,7 @@ public class TC_002 extends SetUp{
 		BasicFunctions bs=new BasicFunctions(driver);
 		Login_Objects ls=new Login_Objects(driver);
 		bs.fn_get("https://www.google.com/");
-		ls.fn_TestgetUR("This is");
+		ls.fn_SearchonGooglePage("Robin Jain");
 		
 		fn_tearDown();
   }

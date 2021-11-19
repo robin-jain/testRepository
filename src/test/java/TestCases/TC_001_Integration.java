@@ -21,7 +21,7 @@ public class TC_001_Integration extends SetUp{
 		BasicFunctions bs=new BasicFunctions(driver);
 		Login_Objects ls=new Login_Objects(driver);
 		bs.fn_get("https://www.google.com/");
-		ls.fn_TestgetUR("This is");
+		ls.fn_SearchonGooglePage("This is");
 		 System.out.println("Welcome ->"+map.get("TestCaseName")+" Your search key is->"+map.get("userid"));
 		
 		fn_tearDown();
