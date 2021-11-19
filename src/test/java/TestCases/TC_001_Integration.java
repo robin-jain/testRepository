@@ -10,7 +10,7 @@ import Libraries.BasicFunctions;
 import Libraries.SetUp;
 import ObjectRepository.Login_Objects;
 
-public class TC_001 extends SetUp{
+public class TC_001_Integration extends SetUp{
 
 
 	

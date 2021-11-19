@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class PropertyExample {
+public class TC_010_PropertyExample {
   @Test
   public void f() throws IOException {
 	  File f=new File("C:\\Users\\HP PC\\Sele_Automa\\src\\test\\resources\\config\\globalConfig.properties");

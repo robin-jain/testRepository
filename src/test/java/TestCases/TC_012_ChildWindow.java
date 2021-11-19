@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class ChildWindow {
+public class TC_012_ChildWindow {
   @Test
   public void f() {
 	  WebDriverManager.chromedriver().setup();

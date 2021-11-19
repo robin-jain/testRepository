@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class ExplicitWait {
+public class TC_011_ExplicitWait {
 	
 	@Test
 	public void fn() {

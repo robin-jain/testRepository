@@ -26,8 +26,9 @@ public class DataIn {
 		  
 		  int maxRow=ws.getLastRowNum();
 		  int maxCol=ws.getRow(0).getLastCellNum();
+		  int iter=countTestCasesforIteration(str);
 		  Map<Object, Object> datamap = new HashMap<>();
-		  obj = new Object[maxRow][1];
+		  obj = new Object[iter][1];
 			  for (int i=0;i<maxRow;i++) {
 					  if (ws.getRow(i+1).getCell(0).toString().equalsIgnoreCase(m.getName())) {
 						 // System.out.println(ws.getRow(i+1).getCell(0).toString());
@@ -80,5 +81,24 @@ public class DataIn {
 			  XSSFSheet ws=wb.getSheet(strSheetName);
 			  return ws;
 		}
+
+		  public static int countTestCasesforIteration(String strTestCaseName) throws IOException {
+			  int iCount=0;
+			  XSSFSheet ws=loadDataExcel(strpath,"Data");
+			  int maxRow=ws.getLastRowNum(); 
+			  for (int i = 0; i < maxRow; i++) {
+		  			  if (ws.getRow(i+1).getCell(0).toString().equalsIgnoreCase(strTestCaseName)) {
+		  					 	iCount=iCount+1;
+	        			}
+			        		
+			        		
+
+
+			    }
+			  
+			  return iCount;
+		  }
+
+
 
 }

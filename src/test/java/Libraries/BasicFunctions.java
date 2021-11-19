@@ -61,6 +61,19 @@ public class BasicFunctions {
 		}
 		
 	}
+	
+	public void fn_sendKeys(By Locator, String strInput) throws IOException {
+		
+		try{
+			driver.findElement(Locator).sendKeys(strInput);
+			SetUp.func_printlogPass("Successfully Entered  "+strInput );;
+		} catch(Exception e) {
+			SetUp.func_printlogFail("Not able to Enter "+ strInput);
+			SetUp.childTest.fail("Not able to click to Element",
+					MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot()).build());
+		}
+		
+	}
 
 	public String Screenshot() {
 		return ((TakesScreenshot )driver).getScreenshotAs(OutputType.BASE64);

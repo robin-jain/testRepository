@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class ScollbyElementVisible {
+public class TC_009_ScollbyElementVisible {
   @Test
   public void f() {
 

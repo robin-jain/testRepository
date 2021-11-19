@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Test_ActionClassBuild {
+public class TC_007_ActionClassBuild {
   @Test
   public void f() {
 	  WebDriverManager.chromedriver().setup();

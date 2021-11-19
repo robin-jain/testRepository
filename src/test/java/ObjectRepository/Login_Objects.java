@@ -22,9 +22,10 @@ public class Login_Objects {
 	
 	
 	public void fn_TestgetUR(String str) throws IOException {
-		bs.fn_click(btn, "thisa");
-		driver.findElement(type).sendKeys(str);	
-		bs.fn_click(gbutton, "Click on Search butt ");
+		bs.fn_click(btn, "Click on Next button");
+		bs.fn_sendKeys(type, str);
+		//driver.findElement(type).sendKeys(str);	
+		bs.fn_click(gbutton, "Click on Google Search button ");
 	}
 
 

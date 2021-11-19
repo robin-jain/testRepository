@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class ScorllbyElementVisibleHorizantlly {
+public class TC_008_ScorllbyElementVisibleHorizantlly {
   @Test
   public void f() {
 	  WebDriverManager.chromedriver().setup();

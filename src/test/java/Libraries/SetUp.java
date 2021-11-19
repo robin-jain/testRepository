@@ -73,8 +73,8 @@ public class SetUp {
 	
 	@BeforeTest
 	public void startReprt() {
-		String str = new SimpleDateFormat("yyyyMMddHHmm'.txt'").format(new Date());
-		htmlReport=new ExtentHtmlReporter("Reports/Automation_Report_"+str+".html");
+		String strDateTime = new SimpleDateFormat("yyyyMMddHHmm").format(new Date());
+		htmlReport=new ExtentHtmlReporter("Reports/Automation_Report_"+strDateTime+".html");
 		extent=new ExtentReports();
 		extent.attachReporter(htmlReport);
 		htmlReport.config().setReportName("Regression Report");
