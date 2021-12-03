@@ -22,7 +22,7 @@ public class TC_001_Integration extends SetUp{
 		Login_Objects ls=new Login_Objects(driver);
 		bs.fn_get("https://www.google.com/");
 		ls.fn_SearchonGooglePage("This is");
-		 System.out.println("Welcome ->"+map.get("TestCaseName")+" Your search key is->"+map.get("userid"));
+		 System.out.println("Welcome ->"+map.get("TestCaseName")+" Your search key is->"+(map.get("userid")).getClass().getSimpleName());
 		
 		fn_tearDown();
   }
