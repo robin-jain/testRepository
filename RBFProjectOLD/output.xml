@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.6.8 on win32)" generated="20211029 01:56:58.419" rpa="false" schemaversion="2">
+<suite id="s1" name="RBFProject" source="D:\RBF\RBFProject">
+<suite id="s1-s1" name="Test" source="D:\RBF\RBFProject\Test">
+<suite id="s1-s1-s1" name="RBF TS 001" source="D:\RBF\RBFProject\Test\RBF_TS_001.robot">
+<test id="s1-s1-s1-t1" name="myfirstTestCase">
+<kw name="Log" library="BuiltIn">
+<arg>this is test</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211029 01:56:59.046" level="INFO">this is test</msg>
+<status status="PASS" starttime="20211029 01:56:59.043" endtime="20211029 01:56:59.048"/>
+</kw>
+<status status="PASS" starttime="20211029 01:56:59.036" endtime="20211029 01:56:59.051"/>
+</test>
+<status status="PASS" starttime="20211029 01:56:58.539" endtime="20211029 01:56:59.057"/>
+</suite>
+<status status="PASS" starttime="20211029 01:56:58.534" endtime="20211029 01:56:59.065"/>
+</suite>
+<status status="PASS" starttime="20211029 01:56:58.498" endtime="20211029 01:56:59.072"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RBFProject">RBFProject</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test">RBFProject.Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="RBF TS 001">RBFProject.Test.RBF TS 001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
